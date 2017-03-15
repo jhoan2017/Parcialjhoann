@@ -8,5 +8,10 @@
     tools:context="com.jonmid.mystareas.view.CreateAccountActivity">
 
 
-
-    </android.support.design.widget.CoordinatorLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="68dp"
+        android:layout_height="58dp"
+        android:text="TextView"
+        />
+</android.support.design.widget.CoordinatorLayout>
