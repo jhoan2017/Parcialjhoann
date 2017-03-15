@@ -23,40 +23,50 @@
                 android:id="@+id/id_logo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_toStartOf="@+id/id_tv_link"
-                android:layout_marginEnd="33dp"
-
-                android:layout_marginTop="41dp" />
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="41dp"
+                android:src="@mipmap/ic_launcher" />
 
 
             <TextView
                 android:id="@+id/id_tv_link"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/id_logo"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/id_logo"
+                android:onClick="goCreateAccount"
                 android:text="@string/str_label_link_createaccount"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"
                 android:textSize="16sp"
-                android:layout_marginLeft="10dp"
-                android:onClick="goCreateAccount"
-                android:layout_alignBottom="@+id/id_logo"
-                android:layout_alignStart="@+id/id_tv_question" />
-
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/id_tv_question"
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/str_label_question"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:layout_below="@+id/id_logo"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="24dp" />
+                android:layout_alignBottom="@+id/id_logo"
+                android:layout_alignStart="@+id/id_tv_link"
+                android:text="Apellido Botina" />
 
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView"
+                android:layout_centerVertical="true"
+                android:text="Edad: 25" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="19dp"
+                android:text="Telefono 3016000149" />
 
 
         </RelativeLayout>
@@ -64,8 +74,8 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true"
-            android:layout_weight="0.4">
+            android:layout_weight="0.4"
+            android:fillViewport="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -82,7 +92,7 @@
                         android:id="@+id/id_txt_username"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/str_login_username"/>
+                        android:hint="@string/str_login_username" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -96,7 +106,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/str_login_password"
-                        android:inputType="textPassword"/>
+                        android:inputType="textPassword" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -104,15 +114,14 @@
                     android:id="@+id/id_btn_in"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/str_login_btn_in"
                     android:layout_marginTop="20dp"
-                    android:theme="@style/StyleButton"/>
+                    android:text="@string/str_login_btn_in"
+                    android:theme="@style/StyleButton" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center">
-
 
 
                 </RelativeLayout>
