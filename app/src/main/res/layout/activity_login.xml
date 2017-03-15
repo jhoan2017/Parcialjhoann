@@ -24,7 +24,39 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher"
-                android:layout_centerInParent="true"/>
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/id_tv_link"
+                android:layout_marginEnd="33dp"
+                android:layout_marginTop="41dp" />
+
+
+            <TextView
+                android:id="@+id/id_tv_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_label_link_createaccount"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:onClick="goCreateAccount"
+                android:layout_alignBottom="@+id/id_logo"
+                android:layout_alignStart="@+id/id_tv_question" />
+
+
+            <TextView
+                android:id="@+id/id_tv_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_label_question"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_below="@+id/id_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp" />
+
+
 
         </RelativeLayout>
 
@@ -80,26 +112,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center">
 
-                    <TextView
-                        android:id="@+id/id_tv_question"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/str_label_question"
-                        android:textColor="@android:color/white"
-                        android:textStyle="bold"
-                        android:textSize="16sp"/>
 
-                    <TextView
-                        android:id="@+id/id_tv_link"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/str_label_link_createaccount"
-                        android:textColor="@android:color/white"
-                        android:textStyle="bold"
-                        android:textSize="16sp"
-                        android:layout_toRightOf="@id/id_tv_question"
-                        android:layout_marginLeft="10dp"
-                        android:onClick="goCreateAccount"/>
 
                 </RelativeLayout>
 
